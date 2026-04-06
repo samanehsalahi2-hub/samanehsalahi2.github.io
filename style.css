@@ -17,6 +17,7 @@ header {
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
+
 /* --- Navigation Menu --- */
 nav {
     margin-top: 20px;
@@ -42,18 +43,6 @@ nav a.active {
     padding-bottom: 5px;
 }
 
-/* --- mobile strukture--- */
-
-.menu-checkbox {
-    display: none;
-}
-
-.menu {
-    display: none;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-}
 
 /* --- Hero Section --- */
 .hero {
@@ -187,40 +176,70 @@ footer {
     font-size: 0.9rem;
 }
 
-@media screen and (max-width: 768px) {
-
-  .hero,
-  .info,
-  section.language,
-  .dictionary {
-    width: 95%;
-    padding: 15px;
-  }
-
-  nav a {
-    display: block;
-    margin: 10px 0;
-  }
-
-  header {
-    padding: 25px 10px;
-  }
-
-  h2 {
-    font-size: 1.4rem;
-  }
-
-  h3 {
-    font-size: 1.2rem;
-  }
-
-  table, th, td {
-    font-size: 0.9rem;
-  }
+.menu-checkbox {
+    display: none;
 }
 
+.menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Desktop default */
+.menu {
+    display: none; 
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: inline-block;
+}
+
+
+/* mobile default */
 @media (max-width: 768px) {
+
     .menu {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+        color: white;
+        margin-top: 10px;
+    }
+
+    nav {
+        display: none;
+        background: #283e51;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 15px;
+    }
+
+    nav ul {
+        display: block;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /*active menu*/
+    .menu-checkbox:checked ~ nav {
         display: block;
     }
 }
