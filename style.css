@@ -42,6 +42,19 @@ nav a.active {
     padding-bottom: 5px;
 }
 
+/* --- mobile strukture--- */
+
+.menu-checkbox {
+    display: none;
+}
+
+.menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
 /* --- Hero Section --- */
 .hero {
     background: white;
@@ -162,7 +175,7 @@ section.language p a:hover,
     border-radius: 10px;
     text-align: left;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
+} 
 
 /* --- Footer --- */
 footer {
@@ -204,4 +217,10 @@ footer {
   table, th, td {
     font-size: 0.9rem;
   }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: block;
+    }
 }
