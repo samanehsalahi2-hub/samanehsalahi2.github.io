@@ -1,20 +1,26 @@
 /* --- Global Styles --- */
+
 body {
     font-family: "Poppins", sans-serif;
-    background: #eef1f7;
+    background: #deedfa;
     margin: 0;
     padding: 0;
     color: #333;
-}
+   
 
 
 /* --- Header (Default) --- */
 header {
-    background: linear-gradient(135deg, #4b79a1, #283e51);
-    color: white;
+   /* background: linear-gradient(135deg, #4b79a1, #283e51);*/
+    color: rgb(247, 246, 250);
     padding: 40px 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    background-image: url("photo-01.png"); 
+    background-size: cover ;                
+    background-position: center 55%; 
+    background-repeat: no-repeat;           
+}
 }
 
 
@@ -25,7 +31,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 0 15px;
     font-weight: bold;
     padding: 8px 15px;
@@ -34,11 +40,13 @@ nav a {
 }
 
 nav a:hover {
-    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-5px);
+    background: rgba(250, 248, 248, 0.25);
 }
 
 nav a.active {
-    background: rgba(255, 255, 255, 0.45);
+    color: #111111;
+    background: rgba(243, 241, 241, 0.45);
     border-bottom: 3px solid #ffffff;
     padding-bottom: 5px;
 }
@@ -53,6 +61,7 @@ nav a.active {
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
 .hero h2 {
@@ -175,7 +184,7 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
 }
-
+/*--- checkbox ---*/
 .menu-checkbox {
     display: none;
 }
@@ -187,7 +196,12 @@ footer {
     color: white;
 }
 
-/* Desktop default */
+ /*--- active menu ---*/
+    .menu-checkbox:checked ~ nav {
+        display: block;
+    }
+
+/*--- Desktop default ---*/
 .menu {
     display: none; 
 }
@@ -210,7 +224,7 @@ nav ul li a {
 }
 
 
-/* mobile default */
+/*--- mobile default ---*/
 @media (max-width: 768px) {
 
     .menu {
@@ -223,7 +237,7 @@ nav ul li a {
 
     nav {
         display: none;
-        background: #283e51;
+        background: #a8c6dd;
         padding: 15px;
         border-radius: 10px;
         margin-top: 15px;
@@ -238,8 +252,5 @@ nav ul li a {
         margin: 10px 0;
     }
 
-    /*active menu*/
-    .menu-checkbox:checked ~ nav {
-        display: block;
-    }
+   
 }
