@@ -165,7 +165,7 @@ section.language p a:hover,
 }
 
 /* --- Dictionary Box --- */
-.dictionary {
+.dictionary, .test {
     background: white;
     width: 80%;
     margin: 30px auto;
