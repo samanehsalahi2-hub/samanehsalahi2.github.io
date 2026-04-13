@@ -6,21 +6,21 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-   
 
 
-/* --- Header (Default) --- */
-header {
-   /* background: linear-gradient(135deg, #4b79a1, #283e51);*/
-    color: rgb(247, 246, 250);
-    padding: 40px 20px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    background-image: url("photo-01.png"); 
-    background-size: cover ;                
-    background-position: center 55%; 
-    background-repeat: no-repeat;           
-}
+
+    /* --- Header (Default) --- */
+    header {
+        /* background: linear-gradient(135deg, #4b79a1, #283e51);*/
+        color: rgb(247, 246, 250);
+        padding: 40px 20px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        background-image: url("photo-01.png");
+        background-size: cover;
+        background-position: center 55%;
+        background-repeat: no-repeat;
+    }
 }
 
 
@@ -36,7 +36,7 @@ nav a {
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 6px;
-    transition: 0.3s; 
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -60,7 +60,7 @@ nav a.active {
     padding: 25px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
 
@@ -75,7 +75,7 @@ nav a.active {
     margin: 20px auto;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
 }
 
 .quote-box {
@@ -102,13 +102,13 @@ section.language {
     padding: 25px;
     width: 80%;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
 
 section.language:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
@@ -165,15 +165,16 @@ section.language p a:hover,
 }
 
 /* --- Dictionary Box --- */
-.dictionary, .test {
+.dictionary,
+.test {
     background: white;
     width: 80%;
     margin: 30px auto;
     padding: 25px;
     border-radius: 10px;
     text-align: left;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-} 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
 /* --- Footer --- */
 footer {
@@ -184,6 +185,7 @@ footer {
     margin-top: 40px;
     font-size: 0.9rem;
 }
+
 /*--- checkbox ---*/
 .menu-checkbox {
     display: none;
@@ -196,14 +198,14 @@ footer {
     color: white;
 }
 
- /*--- active menu ---*/
-    .menu-checkbox:checked ~ nav {
-        display: block;
-    }
+/*--- active menu ---*/
+.menu-checkbox:checked~nav {
+    display: block;
+}
 
 /*--- Desktop default ---*/
 .menu {
-    display: none; 
+    display: none;
 }
 
 nav {
@@ -222,7 +224,6 @@ nav ul {
 nav ul li a {
     display: inline-block;
 }
-
 
 /*--- mobile default ---*/
 @media (max-width: 768px) {
@@ -252,5 +253,5 @@ nav ul li a {
         margin: 10px 0;
     }
 
-   
+
 }
